@@ -1,6 +1,8 @@
-const fruits = ["Orange", "Banana", "Mango", "Pinapple"];
-
 function ListGroup() {
+  let fruits = ["Orange", "Banana", "Mango", "Pinapple"];
+
+  //   fruits = [];
+
   return (
     //meke mehema html elements dekak return karanna be.
     // 1. ekko div walin cover karanna one
@@ -18,8 +20,19 @@ function ListGroup() {
     //   </ul>
     // </>
 
+    // <>
+    //   <h1>List</h1>
+    //   <ul className="list-group">
+    //     {fruits.map((fruit) => (
+    //       <li key={fruit}>{fruit}</li>
+    //     ))}
+    //   </ul>
+    // </>
+
     <>
       <h1>List</h1>
+      {fruits.length === 0 ? <p>No item found</p> : null}
+      {fruits.length === 0 && <p>No item found</p>}
       <ul className="list-group">
         {fruits.map((fruit) => (
           <li key={fruit}>{fruit}</li>
