@@ -1,7 +1,11 @@
+import { MouseEvent } from "react";
+
 function ListGroup() {
   let fruits = ["Orange", "Banana", "Mango", "Pinapple"];
-
   //   fruits = [];
+
+  //event handler
+  const handleClick = (event: MouseEvent) => console.log(event);
 
   return (
     //meke mehema html elements dekak return karanna be.
@@ -22,7 +26,7 @@ function ListGroup() {
 
     // <>
     //   <h1>List</h1>
-    //   <ul className="list-group">
+    //   <ul className="list-group-item">
     //     {fruits.map((fruit) => (
     //       <li key={fruit}>{fruit}</li>
     //     ))}
@@ -35,7 +39,9 @@ function ListGroup() {
       {fruits.length === 0 && <p>No item found</p>}
       <ul className="list-group">
         {fruits.map((fruit) => (
-          <li key={fruit}>{fruit}</li>
+          <li className="list-group-item" key={fruit} onClick={handleClick}>
+            {fruit}
+          </li>
         ))}
       </ul>
     </>
