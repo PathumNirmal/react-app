@@ -112,9 +112,10 @@ import { useState } from "react";
 interface Props {
   fruits: string[];
   heading: string;
+  onSelectFruit: (fruit: string) => void;
 }
 
-function ListGroup({ fruits, heading }: Props) {
+function ListGroup({ fruits, heading, onSelectFruit }: Props) {
   const [selectedIndex, setSelectedIndex] = useState(-1);
 
   return (
@@ -133,6 +134,7 @@ function ListGroup({ fruits, heading }: Props) {
             key={fruit}
             onClick={() => {
               setSelectedIndex(index);
+              onSelectFruit(fruit);
             }}
           >
             {fruit}
