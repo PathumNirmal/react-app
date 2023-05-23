@@ -44,23 +44,34 @@
 //   );
 // }
 
-import Button from "../components/Button";
-import Alert from "../components/Alert";
-import { useState } from "react";
+// import Button from "../components/Button";
+// import Alert from "../components/Alert";
+// import { useState } from "react";
+
+// function App() {
+//   const [alertVisible, setAlertVisibility] = useState(false);
+
+//   return (
+//     <div>
+//       {alertVisible && (
+//         <Alert onClose={() => setAlertVisibility(false)}>
+//           You can close this
+//         </Alert>
+//       )}
+//       <Button color="danger" onClick={() => setAlertVisibility(true)}>
+//         my button
+//       </Button>
+
+//     </div>
+//   );
+// }
+
+import Like from "../components/Like";
 
 function App() {
-  const [alertVisible, setAlertVisibility] = useState(false);
-
   return (
     <div>
-      {alertVisible && (
-        <Alert onClose={() => setAlertVisibility(false)}>
-          You can close this
-        </Alert>
-      )}
-      <Button color="danger" onClick={() => setAlertVisibility(true)}>
-        my button
-      </Button>
+      <Like onClick={() => console.log("Clicked")} />
     </div>
   );
 }
