@@ -118,12 +118,22 @@
 //   );
 // }
 
-import Form3 from "./components/Form3";
+// import Form3 from "./components/Form3";
+
+// function App() {
+//   return (
+//     <div>
+//       <Form3></Form3>
+//     </div>
+//   );
+// }
+
+import Form3ValidateWithZod from "./components/Form3 copy (validate with zod)";
 
 function App() {
   return (
     <div>
-      <Form3></Form3>
+      <Form3ValidateWithZod></Form3ValidateWithZod>
     </div>
   );
 }

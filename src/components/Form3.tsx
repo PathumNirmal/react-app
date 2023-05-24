@@ -40,7 +40,7 @@ const Form3 = () => {
         <input
           {...register("age")}
           id="age"
-          type="name"
+          type="number"
           className="form-control"
         />
       </div>
