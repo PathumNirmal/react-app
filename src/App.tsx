@@ -66,13 +66,35 @@
 //   );
 // }
 
-import Like from "../components/Like";
+// import Like from "../components/Like";
+
+// function App() {
+//   return (
+//     <div>
+//       <Like onClick={() => console.log("Clicked")} />
+//     </div>
+//   );
+// }
+
+import { useState } from "react";
+import ExpandedText from "../components/ExpandedText";
 
 function App() {
   return (
-    <div>
-      <Like onClick={() => console.log("Clicked")} />
-    </div>
+    <ExpandedText maxChar={50}>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est quis sint
+      quam distinctio error cupiditate voluptatibus exercitationem saepe dolor!
+      Illum est velit porro laborum molestias. Tempora itaque aspernatur harum
+      unde numquam quod repellendus neque facere quis, cupiditate, molestias
+      exercitationem sit est nobis laudantium! Soluta, quam doloribus!
+      Perferendis, tempore vitae possimus nobis dolorum, consequatur omnis
+      numquam repellendus consectetur asperiores corporis. Dolorem inventore
+      nostrum tempore minima! Similique dicta quisquam maxime praesentium
+      consequuntur eveniet obcaecati sequi fuga architecto impedit! Rem quo
+      porro cum! Tempora, cupiditate repellat? Eius, in laboriosam impedit alias
+      quae, sed iusto sequi ad nihil eum reiciendis veniam voluptates eligendi
+      quo.
+    </ExpandedText>
   );
 }
 
