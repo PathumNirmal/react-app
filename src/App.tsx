@@ -1,4 +1,4 @@
-// import ListGroup from "../components/ListGroup";
+// import ListGroup from "./components/ListGroup";
 
 // function App() {
 //   let fruits = ["Orange", "Banana", "Mango", "Pinapple", "Wood Apple"];
@@ -20,7 +20,7 @@
 //   );
 // }
 
-// import Alert from "../components/Alert";
+// import Alert from "./components/Alert";
 
 // function App() {
 //   return (
@@ -32,7 +32,7 @@
 //   );
 // }
 
-// import Button from "../components/Button";
+// import Button from "./components/Button";
 
 // function App() {
 //   return (
@@ -44,8 +44,8 @@
 //   );
 // }
 
-// import Button from "../components/Button";
-// import Alert from "../components/Alert";
+// import Button from "./components/Button";
+// import Alert from "./components/Alert";
 // import { useState } from "react";
 
 // function App() {
@@ -66,7 +66,7 @@
 //   );
 // }
 
-// import Like from "../components/Like";
+// import Like from "./components/Like";
 
 // function App() {
 //   return (
@@ -76,25 +76,35 @@
 //   );
 // }
 
-import { useState } from "react";
-import ExpandedText from "../components/ExpandedText";
+// import { useState } from "react";
+// import ExpandedText from "./components/ExpandedText";
+
+// function App() {
+//   return (
+//     <ExpandedText maxChar={50}>
+//       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est quis sint
+//       quam distinctio error cupiditate voluptatibus exercitationem saepe dolor!
+//       Illum est velit porro laborum molestias. Tempora itaque aspernatur harum
+//       unde numquam quod repellendus neque facere quis, cupiditate, molestias
+//       exercitationem sit est nobis laudantium! Soluta, quam doloribus!
+//       Perferendis, tempore vitae possimus nobis dolorum, consequatur omnis
+//       numquam repellendus consectetur asperiores corporis. Dolorem inventore
+//       nostrum tempore minima! Similique dicta quisquam maxime praesentium
+//       consequuntur eveniet obcaecati sequi fuga architecto impedit! Rem quo
+//       porro cum! Tempora, cupiditate repellat? Eius, in laboriosam impedit alias
+//       quae, sed iusto sequi ad nihil eum reiciendis veniam voluptates eligendi
+//       quo.
+//     </ExpandedText>
+//   );
+// }
+
+import Form from "./components/Form";
 
 function App() {
   return (
-    <ExpandedText maxChar={50}>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est quis sint
-      quam distinctio error cupiditate voluptatibus exercitationem saepe dolor!
-      Illum est velit porro laborum molestias. Tempora itaque aspernatur harum
-      unde numquam quod repellendus neque facere quis, cupiditate, molestias
-      exercitationem sit est nobis laudantium! Soluta, quam doloribus!
-      Perferendis, tempore vitae possimus nobis dolorum, consequatur omnis
-      numquam repellendus consectetur asperiores corporis. Dolorem inventore
-      nostrum tempore minima! Similique dicta quisquam maxime praesentium
-      consequuntur eveniet obcaecati sequi fuga architecto impedit! Rem quo
-      porro cum! Tempora, cupiditate repellat? Eius, in laboriosam impedit alias
-      quae, sed iusto sequi ad nihil eum reiciendis veniam voluptates eligendi
-      quo.
-    </ExpandedText>
+    <div>
+      <Form></Form>
+    </div>
   );
 }
 
